@@ -150,7 +150,7 @@ class DetectionFromImageModule(DetectionInferenceModule):
     """
     if zipped_side_inputs is None:
       zipped_side_inputs = []
-    # shape parameter in batch image detection for "1" to None set
+    # shape parameter in batch image detection for "1" to None set   
     sig = [tf.TensorSpec(shape=[None, None, None, 3],
                          dtype=tf.uint8,
                          name='input_tensor')]
